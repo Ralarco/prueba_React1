@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/estilos.css";
+import Container from "react-bootstrap/Container";
+import { Navbar, Row } from "react-bootstrap";
+import MiApi from "./components/MiApi";
+/* import FooterApp from "./components/FooterApp"; */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Navbar className="navBar" fixed="top">
+        <Container>
+          <Navbar.Brand>
+            Rick&Morty<span>App</span>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+
+      <Row>
+        <MiApi />
+      </Row>
+      
+    </Container>
   );
 }
 

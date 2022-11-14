@@ -1,0 +1,143 @@
+:root {
+  --navbar-bg-color: #4cb5ae;
+  --navsearch-bg-color: #81d6e3;
+  --ligth-font-color: #b2ddf7;
+  --dark-font-color: #183a38;
+  --Fedoka-font-fam: "Fredoka One", cursive;
+  --Roboto-font-fam: "Roboto Slab", serif;
+}
+
+body {
+  font-family: var(--Roboto-font-fam);
+  margin: 0;
+}
+
+.navBar {
+  background-color: var(--navbar-bg-color);
+  font-family: var(--Fedoka-font-fam);
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.8em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.secPrincipal {
+  padding: 15px;
+  padding-top: 170px;
+  background-color: rgb(248, 248, 248);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-width: 18rem;
+  border-radius: 5px;
+}
+
+.tarjetas {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  border: solid 1px #ccc;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.27); 
+  box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.27);
+}
+
+.tarjetas h2 {
+  font-size: 1.7em;
+}
+
+.fotoCard {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.searchBar {
+  width: 100%;
+  background-color: #183a38;
+  padding: 20px;
+  position: fixed;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.searchBar input {
+  border-radius: 50px;
+  padding: 5px;
+  border: 2px solid #bebebe;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.btnOrder {
+  font-weight: 0;
+  font-size: 14px;
+  color: #1c1c1c;
+  background-color: #b2ddf7;
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btnOrder:hover {
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background-color: #fff;
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
+
+.pieApp {
+  background-color: var(--dark-font-color);
+  padding: 50px;
+  position: sticky;
+}
+
+@media only screen and (max-width: 600px) {
+  .secPrincipal {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .secPrincipal {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .secPrincipal {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .secPrincipal {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .secPrincipal {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
